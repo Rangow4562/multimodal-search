@@ -1,3 +1,7 @@
+# ather-multimodal-rag
+
+A robust Multimodal Retrieval-Augmented Generation (RAG) pipeline designed for processing PDFs, extracting structured text, images, and layout annotations using Mistral Document AI, indexing vector embeddings in Azure AI Search, and querying using Azure OpenAI vision models.
+
 ## New Workflow (OCR JSON → Ingest → Query)
 
 1) Prepare OCR JSON
@@ -32,9 +36,7 @@ python rag_query.py
 Notes:
 - Images are stored as `<doc_id>_page{page}_chunk{chunk}_img-{n}.(jpg|png)` with correct content-type.
 - Only `.jpg`/`.png` are indexed; missing blobs are skipped gracefully during ingestion and query.
-# RAG Pipeline with Image Support
 
-A Retrieval-Augmented Generation (RAG) pipeline that processes PDFs, extracts images and annotations, and provides intelligent querying with both text and visual content.
 
 ## Overview
 
@@ -147,7 +149,7 @@ This will:
 ### 4. Re-index with Image References
 
 ```bash
-python parse_document.py
+python parse_document.py --reindex
 ```
 
 This will:
@@ -259,5 +261,4 @@ This will check:
 
 ## License
 
-This project is provided as-is for educational and development purposes.
-# azure-multimodal-rag
+This project is provided as-is for development purposes.
