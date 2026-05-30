@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ather-multimodal-rag
 
 A robust Multimodal Retrieval-Augmented Generation (RAG) pipeline designed for processing PDFs, extracting structured text, images, and layout annotations using Mistral Document AI, indexing vector embeddings in Azure AI Search, and querying using Azure OpenAI vision models.
@@ -262,3 +263,7 @@ This will check:
 ## License
 
 This project is provided as-is for development purposes.
+=======
+# multimodal-search
+Document processing and multimodal RAG pipeline using Azure AI Search &amp; OpenAI Vision.
+>>>>>>> multi/main
